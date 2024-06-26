@@ -35,7 +35,7 @@ def f(x):
     return np.sin(np.pi*x)
 
 if __name__ == '__main__':
-    # Plot the solution
+    # Plot the solution for a specific set of parameters
     u = heatequation(L=1, T=0.1, alpha=0.1, f=f, Nx=50, Nt=50)
     plt.plot(np.linspace(0, 1, 51), u)
     plt.show()
